@@ -1,12 +1,31 @@
-
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 .menu{
   background-color: rgb(62,57,107);
   width: 100%;
   height: 450px;
   line-height: 66px;
   position: relative;
+}
+.menu_bas{
+  background-color: #FFFEE8;
+  width: 100%;
+  height: 50px;
+  line-height: 100px;
+  position: relative;
+}
+.menu_bas-left{
+  float: left;
+  font-family: Nunito;
+}
+.menu_bas_right{
+  float: right;
+  text-transform: uppercase;
+  font-family: Nunito;
 
 }
+
+
 .header_texture{
   width: 100%;
   height:100%;
