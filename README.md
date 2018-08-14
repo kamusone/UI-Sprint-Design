@@ -1,24 +1,13 @@
 # README
+Aprés production, l'image & avatar ne sont pas visible, merci de cloner et de checker sur votre server interne.
+https://mon-site-stpages.herokuapp.com
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Procedure:
+Git clone:https://github.com/kamusone/UI-Sprint-Design.git
+cd Frintstat
+Installation des gems (sans la production)
+$ bundle install --without production
+$ rails server
 
-Things you may want to cover:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Responsive disponible, la page peut étre reduite.
