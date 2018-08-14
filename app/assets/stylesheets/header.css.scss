@@ -26,6 +26,36 @@
   z-index: 10;
 }
 
+.header_slogan{
+  text-align: center;
+
+}
+.header_slogan_title{
+  color: black;
+  // font-size: 40px;
+  text-transform: uppercase;
+  font-family: Lato;
+
+}
+.header_slogan_btn{
+  display: inline-block;
+  color: white;
+  width: 150px;
+  text-decoration: none;
+  padding: 10px 15px;
+  background: #d35400;
+  border-radius: 4px;
+  font-size: 20px;
+  }
+
+.header_slogan_btn:hover{
+  border-bottom: 2px solid;
+  background-color: #2470a0;
+
+
+}
+
+
 .m-left{
   float: left;
 }
@@ -39,7 +69,14 @@
   letter-spacing: 1px;
   color: white;
 }
+.avatar{
+  // width: 10px;
+  // float: left;
+  // height: 10px;
+  // border-radius: 50%;
+  // margin-right: 25px;
 
+}
 .m-right{
   float: right;
 }
