@@ -1,0 +1,21 @@
+/* regle générales du site  */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700,900');
+
+html, body{
+  margin: 0;padding: 0;
+  font-family: 'Lato';
+  // background: rgba(0,0,0,0.5);
+// pour ne pas scroller sur les cotés
+  overflow-x: hidden;
+}
+
+.inner{
+  width: 95%;
+  margin: auto;
+  position: relative;
+// pour afficher le menu en avant plan
+  z-index: 999;
+
+}

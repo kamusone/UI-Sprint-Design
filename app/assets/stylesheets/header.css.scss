@@ -1,0 +1,117 @@
+
+.menu{
+  background-color: rgb(62,57,107);
+  width: 100%;
+  height: 450px;
+  line-height: 66px;
+  position: relative;
+
+}
+.header_texture{
+  width: 100%;
+  height:100%;
+  position: absolute;
+  top: 0;left: 0;
+  background: url('work.jpg') center no-repeat;
+  background-size: cover;
+  z-index: 1;
+  opacity: 0.7;
+}
+.header_texture_arrondi{
+  position: absolute;
+  bottom: 0;
+  background: 0 0;
+  height: 42px;
+  width: 100%;
+  z-index: 10;
+}
+
+.m-left{
+  float: left;
+}
+.logo{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Nunito';
+  font-weight: 900;
+  font-size: 35px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.m-right{
+  float: right;
+}
+
+.m-link{
+// pour retirer le soulignement
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+// espacer 0 en heut et en bas et 10 sur les cotés
+  padding: 0;
+  margin: 0 15px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+.m-link:hover{
+  // espace entre le trai et le bottom
+  padding-bottom: 3px;
+  border-bottom: 2px solid;
+}
+.m-link i{
+  margin-right: 5px;
+}
+
+// le responsive
+.m-nav-toggle{
+
+  width: 40px;
+  height: 66px;
+  display: none;
+  align-items: center;
+  float: right;
+  cursor: pointer;
+}
+span.m-toggle-icon, span.m-toggle-icon::before, span.m-toggle-icon::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #d35400;
+  position: relative;
+}
+span.m-toggle-icon::before{top: 12px;}
+span.m-toggle-icon::after{top: -14px;}
+
+// lorsqu'on click sur le burger la colonne s'affiche et disparait
+.m-right is-open{
+  transform: translateX(0);
+}
+
+// ##########################################responsive###################################################
+@media only screen and (max-width: 880px){
+  .m-right{
+  position: absolute;
+  top: 66px;right:0;
+  width: 200px;
+  height: 100%;
+  background: orange;
+  // pour afficher la barre du responsive décallée de la marge, exp: milieu
+  transform: translateX(0);
+  transition: all 0.3s ease-in-out;
+  }
+  .m-link{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+
+
+  }
+  // dés que l'écran retrécit l'hambouger apparait
+  .m-nav-toggle{
+    display: flex;
+  }
+}
